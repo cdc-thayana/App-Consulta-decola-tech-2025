@@ -2,36 +2,36 @@
 Novo app API REST DIO
 
 Diagrama de classe
-```mermaid
+```Mermaid
 
-    class Conta {
+    class Account {
         -String login
-        -String senha
+        -String password
     }
-    
-    class Usuario {
+
+    class User {
         -String cpf
-        -String nome
+        -String name
         -String email
-        -String telefone
+        -String phone
     }
-    
-    class Curso {
-        -String codigoCurso
-        -String nomeCurso
-        -String descricao
-        -List<String> funcionalidades
+
+    class Course {
+        -String courseCode
+        -String courseName
+        -String description
+        -List<String> features
     }
-    
-    class Noticia {
-        -String titulo
-        -String conteudo
-        -String dataPublicacao
-        -String autor
+
+    class News {
+        -String title
+        -String content
+        -String publicationDate
+        -String author
     }
-    
-    Conta "1" -- "1" Usuario : pertence a
-    Usuario "1" -- "*" Curso : pode se inscrever
-    Curso "1" -- "*" Noticia : pode ter
+
+    Account "1" -- "1" User : belongs to
+    User "1" -- "*" Course : can enroll in
+    Course "1" -- "*" News : can have
 
 ```
