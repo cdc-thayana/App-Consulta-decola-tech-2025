@@ -2,7 +2,7 @@
 Novo app API REST DIO
 
 Diagrama de classe
-
+```mermaid
 
 
     class Conta {
@@ -23,3 +23,4 @@ Diagrama de classe
     }
     Conta --> Titular : possui
     Titular --> Curso : cadastrado em
+```
