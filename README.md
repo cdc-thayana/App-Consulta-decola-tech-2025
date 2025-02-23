@@ -1,7 +1,8 @@
 # App-Consulta-decola-tech-2025
 Novo app API REST DIO
 
-classDiagram
+Diagrama de classe
+
 
 
     class Conta {
@@ -22,4 +23,3 @@ classDiagram
     }
     Conta --> Titular : possui
     Titular --> Curso : cadastrado em
-
