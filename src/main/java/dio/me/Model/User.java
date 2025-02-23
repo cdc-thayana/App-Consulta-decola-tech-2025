@@ -1,4 +1,4 @@
-package src.main.java.dio.me.Model;
+package dio.me.Model;
 
 //@Entity(name = "tb_user")
 public class User {
@@ -7,7 +7,7 @@ public class User {
     //@GeneratedValue(strategy = GeneratedType.IDENTITY)
     private Long id;
     private String cpf;
-    private String nome;
+    private String nome = "Thayana";
     private String email;
     private String telefone;
 

@@ -1,4 +1,4 @@
-package src.main.java.dio.me.Model;
+package dio.me.Model;
 
 import java.time.LocalDate;
 
