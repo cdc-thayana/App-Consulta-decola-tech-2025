@@ -1,25 +1,77 @@
 package dio.me.Model;
 
-//@Entity(name = "tb_user")
+import jakarta.persistence.*;
+
+import javax.swing.*;
+
+@Entity
+@Table(name = "tb_user") // Define o nome da tabela no banco
 public class User {
 
-   // @Id
-    //@GeneratedValue(strategy = GeneratedType.IDENTITY)
-    private Long id;
-    private String cpf;
-    private String nome = "Thayana";
-    private String email;
-    private String telefone;
+ @Id
+ @GeneratedValue(strategy = GenerationType.IDENTITY)
+ private Long id;
 
-    public String getCpf() { return cpf; }
-    public void setCpf(String value) { this.cpf = value; }
+ private String cpf;
+ private String nome = "Thayana"; // Nome padrão definido
+ private String email;
+ private String telefone;
+ private String accountNumber;
 
-    public String getNome() { return nome; }
-    public void setNome(String value) { this.nome = value; }
+ // Construtor padrão
+ public User() {
+ }
 
-    public String getEmail() { return email; }
-    public void setEmail(String value) { this.email = value; }
+ // Getters e Setters
+ public Long getId() {
+  return id;
+ }
 
-    public String getTelefone() { return telefone; }
-    public void setTelefone(String value) { this.telefone = value; }
+ public void setId(Long id) {
+  this.id = id;
+ }
+
+ public String getCpf() {
+  return cpf;
+ }
+
+ public void setCpf(String cpf) {
+  this.cpf = cpf;
+ }
+
+ public String getNome() {
+  return nome;  // Retorna o valor do campo 'nome'
+ }
+
+ public void setNome(String nome) {
+  this.nome = nome;
+ }
+
+ public String getEmail() {
+  return email;
+ }
+
+ public void setEmail(String email) {
+  this.email = email;
+ }
+
+ public String getTelefone() {
+  return telefone;
+ }
+
+ public void setTelefone(String telefone) {
+  this.telefone = telefone;
+ }
+
+ public String getAccountNumber() {
+  return accountNumber;
+ }
+
+ public void setAccountNumber(String accountNumber) {
+  this.accountNumber = accountNumber;
+ }
+
+ public SpinnerNumberModel getAccount() {
+  return null;
+ }
 }

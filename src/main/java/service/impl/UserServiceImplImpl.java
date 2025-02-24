@@ -1,6 +1,8 @@
 package service.impl;
 
-public class UserServiceImplImpl extends UserServiceImpl {
+import Repository.UserRepository;
+
+public abstract class UserServiceImplImpl extends UserServiceImpl {
     public UserServiceImplImpl(UserRepository userRepository) {
         super(userRepository);
     }

@@ -1,4 +1,6 @@
 package dio.me.Model;
+import jakarta.servlet.http.HttpServletRequest;
+
 
 public class Curso {
     private String codigoCurso;

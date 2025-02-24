@@ -1,6 +1,8 @@
 package dio.me.Model;
 
 import java.time.LocalDate;
+import jakarta.servlet.http.HttpServletRequest;
+
 
 public class Noticia {
     private String titulo;

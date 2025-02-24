@@ -2,8 +2,14 @@
 package service;
 
 
+import dio.me.Model.User;
+
 public interface UserService {
     boolean existsByAccount(String accountNumber);
 
-    Object findById(Long id);
+    User findById(Long id);
+
+    Object create(Object userToCreate);
+
+    User create(User userToCreate);
 }
