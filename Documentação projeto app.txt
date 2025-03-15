@@ -1,0 +1,80 @@
+
+O ChatGPT disse:
+Documentação do Projeto
+Este projeto é uma aplicação de gerenciamento de contas, cursos e notícias, utilizando Java com JPA (Jakarta Persistence API) e servlets. O objetivo principal do projeto é fornecer uma estrutura para gerenciar dados de contas de usuário, cursos disponíveis e notícias associadas.
+
+Estrutura do Projeto
+A estrutura do projeto é composta por diversas classes que representam entidades e funcionalidades específicas:
+
+1. Classe Account (Pacote: dio.me.model)
+A classe Account representa uma conta de usuário no sistema, armazenando informações básicas de login e senha. Ela é mapeada para um banco de dados utilizando a anotação @Entity do JPA.
+
+Atributos:
+
+id: Identificador único da conta, gerado automaticamente.
+login: Login do usuário.
+senha: Senha do usuário.
+Métodos:
+
+Construtores e métodos getters e setters para acessar e modificar os atributos.
+Anotações:
+
+@Entity: Indica que a classe é uma entidade do JPA.
+@Id: Define o campo id como chave primária.
+@GeneratedValue: Define a estratégia de geração automática do identificador.
+2. Classe Curso (Pacote: dio.me.model)
+A classe Curso é utilizada para representar os cursos disponíveis no sistema. Ela contém informações sobre o código, nome, descrição e funcionalidades de um curso.
+
+Atributos:
+
+codigoCurso: Código identificador do curso.
+nomeCurso: Nome do curso.
+descricao: Descrição do curso.
+funcionalidades: Lista de funcionalidades associadas ao curso.
+Métodos:
+
+Construtores e métodos getters e setters para acessar e modificar os atributos.
+3. Classe Noticia (Pacote: dio.me.model)
+A classe Noticia é utilizada para representar uma notícia no sistema. Cada notícia possui um título, conteúdo, data de publicação e autor.
+
+Atributos:
+
+titulo: Título da notícia.
+conteudo: Conteúdo da notícia.
+dataPublicacao: Data de publicação da notícia.
+autor: Autor da notícia.
+Métodos:
+
+Construtores e métodos getters e setters para acessar e modificar os atributos.
+4. Classe User (Pacote: dio.me.model)
+A classe User representa um usuário no sistema. Ela contém informações pessoais como CPF, nome, e-mail, telefone e número de conta bancária.
+
+Atributos:
+
+id: Identificador único do usuário, gerado automaticamente.
+cpf: CPF do usuário.
+nome: Nome do usuário (com valor padrão "Thayana").
+email: E-mail do usuário.
+telefone: Telefone do usuário.
+accountNumber: Número da conta bancária associada ao usuário.
+Métodos:
+
+Construtores e métodos getters e setters para acessar e modificar os atributos.
+Anotações:
+
+@Entity: Indica que a classe é uma entidade do JPA.
+@Table: Define o nome da tabela no banco de dados como "tb_user".
+@Id: Define o campo id como chave primária.
+@GeneratedValue: Define a estratégia de geração automática do identificador.
+Dependências e Tecnologias Utilizadas
+Jakarta Persistence (JPA): Utilizada para o mapeamento objeto-relacional (ORM) e interação com o banco de dados.
+Servlets: Para a manipulação de requisições HTTP no contexto da aplicação web.
+Java: Linguagem de programação principal do projeto.
+Banco de Dados Relacional: A persistência dos dados é feita em um banco relacional, utilizando o JPA para mapear as entidades e realizar operações CRUD.
+Resultado Final
+Ao executar este projeto, o sistema será capaz de:
+
+Gerenciar contas de usuário, permitindo criar, editar e acessar informações de login e senha.
+Cadastrar e gerenciar cursos, com seus respectivos códigos, nomes, descrições e funcionalidades.
+Exibir notícias, com títulos, conteúdos, datas de publicação e autores.
+Persistir os dados em um banco de dados relacional, utilizando JPA e a estratégia de geração de identificadores.
